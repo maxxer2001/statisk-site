@@ -139,6 +139,7 @@ header nav ul li a:hover {
   text-align: center;
   color: #fff;
   position: relative;
+  min-height: 100vh;
 }
 
 .hero::after {
