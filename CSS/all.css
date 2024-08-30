@@ -10,10 +10,6 @@ body {
   min-height: calc(100vh - 200px);
 }
 
-main {
-  min-height: 100vh;
-}
-
 header {
   background-color: #1a1a1a;
   color: #fff;
@@ -189,7 +185,6 @@ footer {
   color: #ccc;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;
   font-size: 14px;
   border-top: 4px solid #f4b400;
   z-index: 1;
