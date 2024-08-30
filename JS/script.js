@@ -1,4 +1,3 @@
-// Burger Menu Script
 document.addEventListener('DOMContentLoaded', function() {
     const burgerMenu = document.getElementById('burger-menu');
     const navMobile = document.getElementById('nav-mobile');
@@ -9,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Product Data
 const products = [
     {
         "id": "1",
@@ -123,12 +121,10 @@ const products = [
     }
 ];
 
-// Categories Data
 const categories = [
     "Pants", "T-shirts", "Sweaters", "Jackets", "Coats", "Shirts", "Hoodies", "Shoes"
 ];
 
-// Populate Categories Dropdown
 const categoryDropdown = document.getElementById('category');
 categories.forEach(category => {
     const option = document.createElement('option');
@@ -137,7 +133,6 @@ categories.forEach(category => {
     categoryDropdown.appendChild(option);
 });
 
-// Display Products
 const productDisplay = document.getElementById('product-display');
 
 function displayProducts(filteredProducts) {
@@ -155,15 +150,12 @@ function displayProducts(filteredProducts) {
     });
 }
 
-// Filter Products Based on Selected Category
 function filterProducts() {
     const selectedCategory = categoryDropdown.value;
     const filteredProducts = selectedCategory === 'all' ? products : products.filter(product => product.category === selectedCategory);
     displayProducts(filteredProducts);
 }
 
-// Event Listener for Category Selection
 categoryDropdown.addEventListener('change', filterProducts);
 
-// Initial Display of All Products
 filterProducts();
