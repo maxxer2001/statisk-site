@@ -127,12 +127,16 @@ header nav ul li a:hover {
   visibility: visible;
 }
 
+main {
+  min-height: 82vh;
+}
+
 .hero {
   padding: 120px 20px;
   text-align: center;
   color: #fff;
   position: relative;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .hero::after {
